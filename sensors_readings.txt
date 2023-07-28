@@ -2298,3 +2298,5 @@
 29/7/2023 1:5:34;Temperature;26.40;°C;Humidity;75;%;PM1;26;ug/m3;PM2.5;32;ug/m3;PM10;35;ug/m3;CO2;1077;ppm;CO;0.50;ppm;CH2O;0.09;mg/m3;O3;0.03;ppm;NO2;0.01;ppm
 29/7/2023 1:6:34;Temperature;26.20;°C;Humidity;75;%;PM1;25;ug/m3;PM2.5;31;ug/m3;PM10;34;ug/m3;CO2;1090;ppm;CO;0.50;ppm;CH2O;0.09;mg/m3;O3;0.03;ppm;NO2;0.01;ppm
 29/7/2023 1:7:34;Temperature;26.10;°C;Humidity;76;%;PM1;26;ug/m3;PM2.5;32;ug/m3;PM10;35;ug/m3;CO2;1082;ppm;CO;0.50;ppm;CH2O;0.09;mg/m3;O3;0.03;ppm;NO2;0.01;ppm
+29/7/2023 1:16:34;Temperature;26.00;°C;Humidity;76;%;PM1;23;ug/m3;PM2.5;28;ug/m3;PM10;32;ug/m3;CO2;1063;ppm;CO;0.50;ppm;CH2O;0.09;mg/m3;O3;0.03;ppm;NO2;0.01;ppm
+29/7/2023 1:17:34;Temperature;26.10;°C;Humidity;76;%;PM1;23;ug/m3;PM2.5;28;ug/m3;PM10;32;ug/m3;CO2;1070;ppm;CO;0.50;ppm;CH2O;0.09;mg/m3;O3;0.02;ppm;NO2;0.01;ppm
