@@ -166,7 +166,7 @@ st.markdown(f"""<style>{f.read()}</style>""",unsafe_allow_html=True)
 f.close()
 
 st.markdown("""
-<p>Les données ci-dessus sont mesuré en temps réel avec le capteur ZPHS01B développé sur ESP32. 
+<p>Les données ci-dessus sont mesurées en temps réel avec le capteur ZPHS01B développé sur ESP32. 
 Le capteur transmet les données vers un serveur MQTT, ces données sont récupérées sur un serveur distant sur lequel est hébergé notre page. 
     </p>
 <p>ZPHS01B est un module de qualité de l'air multi-en-un, intégrant un capteur de poussière laser, un capteur de dioxyde de carbone infrarouge, 

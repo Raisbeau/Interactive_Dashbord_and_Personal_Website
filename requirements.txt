@@ -4,4 +4,4 @@ datetime
 plotly
 matplotlib
 time
-PIL
+pillow

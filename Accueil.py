@@ -1,11 +1,15 @@
 import streamlit as st
-
+from st_functions import st_button
 
 st.set_page_config(page_title="Accueil", page_icon="♻",layout="wide")
+icon_size = 20
 col1, col2, col3 = st.columns(3,gap="small")
-col1.markdown("[raisbeau[@]hotmail.com](mailto:raisbeau@hotmail.com)")
-col2.markdown("[LinkdIn](https://www.linkedin.com/in/rdanchi/)")
-col3.markdown("[GitHub](https://github.com/Raisbeau)")
+with col1:
+  st_button('newsletter', 'mailto:raisbeau@hotmail.com', 'Envoyer un Email', icon_size)
+with col2:
+  st_button('linkedin', 'https://www.linkedin.com/in/rdanchi/', 'Me suivre sur LinkedIn', icon_size)
+with col3:
+  st_button('github', 'https://github.com/Raisbeau', 'GitHub repo', icon_size)
 st.divider()
 st.subheader("A propos de Rais Beaurel")
 
@@ -20,7 +24,7 @@ st.markdown(
     capteurs peuvent être consultées sur le menu Pollution temps réel.\n
     Il travaille actuellement sur un capteur de mesure de concentration d'ozone basé sur le principe 
     d'absorption UV. Ce type de capteur est plus stable, précis et rapide que les capteurs électrochimiques 
-    utilisé dans le précèdent projet. 
+    utilisés dans le précèdent projet. 
     """
 )
 
