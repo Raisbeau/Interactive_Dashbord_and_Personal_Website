@@ -1,0 +1,7 @@
+streamlit
+numpy
+datetime
+plotly
+matplotlib
+time
+PIL
