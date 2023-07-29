@@ -1,7 +1,7 @@
 import streamlit as st
-#import paho.mqtt.client as mqtt
+# import paho.mqtt.client as mqtt
 
-st.set_page_config(page_title="Broker MQTT", page_icon="➗", layout="wide")
+st.set_page_config(page_title="Broker MQTT", page_icon="♻", layout="wide")
 # MQTT_BROKER = "mqtt.rais-beaurel.com"
 # MQTT_PORT = 1883
 
@@ -27,7 +27,7 @@ st.set_page_config(page_title="Broker MQTT", page_icon="➗", layout="wide")
 st.markdown("""
 # Serveur et Client MQTT
 ##### Cette page fourni les information pour se connecter au serveur MQTT mqtt.rais-beaurel.com
-##### Pour des exemples de code pour Arduino, ESP32 et Python, veuillez consuler ma page [GitHub](https://github.com/Raisbeau).
+##### Pour des exemples de code pour Arduino, ESP32 et Python, veuillez consulter ma page [GitHub](https://github.com/Raisbeau).
 """)
 st.markdown("""
     <div style="border: 2px solid black; border-radius: 10px; padding: 10px;">

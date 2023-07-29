@@ -1,7 +1,6 @@
-streamlit
-numpy
-datetime
-plotly
-matplotlib
-time
-pillow
+streamlit==1.25.0
+numpy==1.25.1
+plotly==5.15.0
+matplotlib==3.7.2
+pillow==9.5.0
+paho-mqtt==1.6.1

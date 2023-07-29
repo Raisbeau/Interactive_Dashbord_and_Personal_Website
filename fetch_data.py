@@ -1,7 +1,7 @@
 import paho.mqtt.client as mqtt #pip install paho-mqtt
 
 # MQTT broker settings
-mqtt_broker = "public.mqtthq.com"
+mqtt_broker = "mqtt.rais-beaurel.com"
 mqtt_port = 1883  # MQTT default port 1883
 mqtt_topic = "airquality"
 # Callback function for MQTT client connection
@@ -13,7 +13,7 @@ def on_message(client, userdata, message):
     f = open("sensors_readings.txt","a")
     f.write(str(message.payload.decode("utf-8"))+"\n")
     f.close()
-    print(str(message.payload.decode("utf-8"))+"\n")
+    #print(str(message.payload.decode("utf-8"))+"\n")
 # Create MQTT client instance
 client = mqtt.Client()
 

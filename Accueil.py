@@ -2,6 +2,8 @@ import streamlit as st
 from st_functions import st_button
 
 st.set_page_config(page_title="Accueil", page_icon="♻",layout="wide")
+
+
 icon_size = 20
 col1, col2, col3 = st.columns(3,gap="small")
 with col1:
@@ -13,15 +15,15 @@ with col3:
 st.divider()
 st.subheader("A propos de Rais Beaurel")
 
-st.markdown(
+st.info(
     """
     Rais Beaurel DANCHI FEUJIO est un étudiant en master 2 de **Capteurs, Instrumentation et Mesures** 
-    à **sorbonne Université**. À titre personnel, il travail sur des protocoles de transfert de données 
-    de capteurs, les méthodes d'acquisitions et d'analyse de données. Il travaille aussi sur divers 
-    types de capteurs, notamment sur les capteurs de surveillance de la qualité d'air. Il a conçu un 
+    à **sorbonne Université**. À titre personnel, il travaille sur des protocoles de transfert de données 
+    de capteurs (MQTT, Lara, Zigbee...), les méthodes d'acquisitions et d'analyse de données. Il travaille aussi sur divers 
+    types de capteurs, notamment les capteurs de surveillance de la qualité d'air (électrochimiques et optiques). Il a conçu un 
     capteur de surveillance de la qualité d'air qui permet de mesurer la concentration des différents
     polluants de l'air (O3, NO2, CO2, COV, CO, les particules (PM)). Les données en temps réel de ces 
-    capteurs peuvent être consultées sur le menu Pollution temps réel.\n
+    capteurs peuvent être consultées sur le menu **Qualité de l'air**.\n
     Il travaille actuellement sur un capteur de mesure de concentration d'ozone basé sur le principe 
     d'absorption UV. Ce type de capteur est plus stable, précis et rapide que les capteurs électrochimiques 
     utilisés dans le précèdent projet. 
@@ -70,6 +72,8 @@ particules (OSIRIS)
 f = open("main.css")
 st.markdown(f"""<style>{f.read()}</style>""",unsafe_allow_html=True)
 f.close()
+
+
 # hide_menu_style = """
 #         <style>
 #         #MainMenu {visibility: hidden;}

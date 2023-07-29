@@ -1,19 +1,25 @@
 [theme]
 
+base="light"
 # Primary accent for interactive elements
-primaryColor = '#E694FF'
+#primaryColor = '#E694FF'
 
 # Background color for the main content area
-backgroundColor = '#00172B'
+#backgroundColor = '#00172B'
 
 # Background color for sidebar and most interactive widgets
-secondaryBackgroundColor = "#00174B" #'#0083B8'
+#secondaryBackgroundColor = "#00174B" #'#0083B8'
 
 # Color used for almost all text
-textColor = '#FFFFFF'
+#textColor = '#FFFFFF'
 
 # Font family for all text in the app, except code blocks
 # Accepted values (serif | sans serif | monospace)
 # Default: "sans serif"
 font = "sans serif"
 
+[server]
+runOnSave = true
+[browser]
+serverAddress = "rais-beaurel.com"
+serverPort = 80
