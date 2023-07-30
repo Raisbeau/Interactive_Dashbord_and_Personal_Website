@@ -20,6 +20,7 @@ font = "sans serif"
 
 [server]
 runOnSave = true
+port = 443
 [browser]
-serverAddress = "rais-beaurel.com"
-serverPort = 80
+#serverAddress = 
+#serverPort = 
