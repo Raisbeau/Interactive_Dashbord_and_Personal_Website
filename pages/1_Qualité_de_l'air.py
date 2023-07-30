@@ -9,6 +9,7 @@ import matplotlib.pylab as plt
 from matplotlib.widgets import Slider
 import time
 from PIL import Image
+import codecs
 # Set page title and header
 st.set_page_config(page_title="Qualité de l'air temps réel", page_icon="♻",layout="wide")
 st.write("### Qualité de l'air - données temps réel du capteur ZPHS01B")
@@ -23,7 +24,8 @@ class SessionState:
         self.end_time = end_time
 
 def update_plot(start_time, end_time):
-    data = np.loadtxt("sensors_readings.txt", delimiter=";", dtype="str")
+    source_file = codecs.open("sensors_readings.txt",encoding="cp1252")
+    data = np.loadtxt(source_file, delimiter=";", dtype="str")
     if len(data) > 0:
         d_time = data[:, 0]
         temp = data[:, 2]
@@ -62,7 +64,8 @@ def update_plot(start_time, end_time):
     return log_time,pm1_plot,pm2_5_plot,pm10_plot,temperature,humidity,co2,co,ch2o,o3,no2,delta_val
 #np.genfromtxt()
 # Load data from file
-data = np.loadtxt("sensors_readings.txt", delimiter=";", dtype="str")
+source_file = codecs.open("sensors_readings.txt",encoding="cp1252")
+data = np.loadtxt(source_file, delimiter=";", dtype="str")
 # Check if data is not empty
 if len(data) >= 100:
     # Extract the last 100 values from the loaded file
