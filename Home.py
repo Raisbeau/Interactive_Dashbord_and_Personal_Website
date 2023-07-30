@@ -1,8 +1,18 @@
 import streamlit as st
 from st_functions import st_button
+from st_pages import Page, show_pages
+
 
 st.set_page_config(page_title="Accueil", page_icon="♻",layout="wide")
-
+show_pages(
+    [
+        Page("Home.py", "Accueil", "🏠"), #:house:
+        # Can use :<icon-name>: or the actual icon
+        Page("pages/Air_quality.py", "Qualité d'air", "🌡️"), #:thermometer:
+        # The pages appear in the order you pass them
+        Page("pages/MQTT_broker.py", "Serveur MQTT", "💻"), #:computer:
+    ]
+)
 
 icon_size = 20
 col1, col2, col3 = st.columns(3,gap="small")

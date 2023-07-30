@@ -24,3 +24,4 @@ client.on_message = on_message
 # Connect to MQTT broker
 client.connect(mqtt_broker, mqtt_port)
 client.loop_forever()
+
