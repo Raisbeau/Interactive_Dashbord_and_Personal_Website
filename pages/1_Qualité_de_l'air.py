@@ -60,7 +60,7 @@ def update_plot(start_time, end_time):
                 log_time.append(timestamp)
         # Create a figure with temperature and humidity lines
     return log_time,pm1_plot,pm2_5_plot,pm10_plot,temperature,humidity,co2,co,ch2o,o3,no2,delta_val
-
+#np.genfromtxt()
 # Load data from file
 data = np.loadtxt("sensors_readings.txt", delimiter=";", dtype="str")
 # Check if data is not empty
