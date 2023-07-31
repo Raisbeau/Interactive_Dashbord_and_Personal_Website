@@ -4,3 +4,4 @@ plotly==5.15.0
 matplotlib==3.7.2
 pillow==9.5.0
 paho-mqtt==1.6.1
+st-pages==0.4.3
